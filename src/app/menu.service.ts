@@ -14,7 +14,7 @@ export class MenuService {
   getMenuData(): Observable<any> {
     return this.http.get(this.apiUrl);
 
-    //If you switch to using a JSON file for the API response
+    //If you change api response using a JSON file
     //return this.http.get('./assets/response.json');
   }
 }
