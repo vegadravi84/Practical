@@ -1,0 +1,32 @@
+ <!-- <h1>Tree Structure</h1>
+
+<p>This is an example of a tree structure created using PrimeNG.</p>
+
+<div [treeview]="menus">
+  <span *ngFor="let menu of menus.children">
+    <a [routerLink]="['/menu', menu.id]">{{menu.name}}</a>
+    <treeview [menus]="menu.children"></treeview>
+  </span>
+</div>  -->
+<!-- 
+<div [treeview]="menus" [treeNodeTemplate]="menuNodeTemplate">
+  <span *ngFor="let menu of menus.children">
+    <a [routerLink]="['/menu', menu.id]">{{menu.name}}</a>
+    <treeview [menus]="menu.children" [treeNodeTemplate]="menuNodeTemplate"></treeview>
+  </span>
+</div>
+
+<ng-template #menuNodeTemplate let-menu>
+  <div class="treeview-node">
+    <span class="treeview-node-label">{{menu.name}}</span>
+    <i class="treeview-node-icon pi pi-{{menu.icon}}"></i>
+  </div>
+</ng-template> -->
+<!-- {{menus | json}}
+<p-tree [value]="menus">
+  <ng-template let-menu pTemplate="default">
+    <p-tree *ngIf="menu.children" [value]="menu.children"></p-tree>
+  </ng-template>
+</p-tree> -->
+<app-menu-tree></app-menu-tree>
+<router-outlet></router-outlet>

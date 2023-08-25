@@ -1,0 +1,8 @@
+
+    <p-tree [value]="treeData">
+      <ng-template let-node pTemplate="default"> 
+        <li>
+          <button class="p-button">{{ node.name }}</button>
+        </li>
+      </ng-template>
+    </p-tree> 
